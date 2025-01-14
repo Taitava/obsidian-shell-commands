@@ -23,6 +23,7 @@ import {Shell} from "./Shell";
 import {Shell_Bash} from "./Shell_Bash";
 import {Shell_Dash} from "./Shell_Dash";
 import {Shell_Zsh} from "./Shell_Zsh";
+import {Shell_Sh} from "./Shell_Sh";
 import {Shell_PowerShellCore} from "./Shell_PowerShellCore";
 import {Shell_PowerShell5} from "./Shell_PowerShell5";
 import {Shell_CMD} from "./Shell_CMD";
@@ -37,6 +38,7 @@ export function registerBuiltinShells(plugin: SC_Plugin) {
     registerShell(new Shell_Bash(plugin));
     registerShell(new Shell_Dash(plugin));
     registerShell(new Shell_Zsh(plugin));
+    registerShell(new Shell_Sh(plugin));
     registerShell(new Shell_PowerShellCore(plugin));
     registerShell(new Shell_PowerShell5(plugin));
     registerShell(new Shell_CMD(plugin));

@@ -1,6 +1,6 @@
 /*
  * 'Shell commands' plugin for Obsidian.
- * Copyright (C) 2021 - 2025 Jarkko Linnanvirta
+ * Copyright (C) 2021 - 2024 Jarkko Linnanvirta
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,9 +22,9 @@ import {normalizePath2} from "../Common";
 import {ShEscaper} from "../variables/escapers/ShEscaper";
 import {BuiltinShell} from "./BuiltinShell";
 
-export class Shell_Bash extends BuiltinShell {
+export class Shell_Sh extends BuiltinShell {
     protected ownedShellBinaries = [
-        "bash",
+        "sh"
     ];
 
     protected getEscaper(rawValue: string): ShEscaper {
@@ -32,11 +32,11 @@ export class Shell_Bash extends BuiltinShell {
     }
 
     public getName(): string {
-        return "Bash";
+        return "Sh";
     }
 
     public getBinaryPath(): string {
-        return "/bin/bash";
+        return "/bin/sh";
     }
 
     public getSupportedHostPlatforms(): PlatformId[] {

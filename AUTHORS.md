@@ -54,6 +54,14 @@ Contact:
 Contact:
 - https://github.com/jvsteiner
 
+## Jon Erling Hustadnes
+- Contributor:
+   - Adding shell (`/bin/sh`)
+- Ideas and feedback
+
+Contact:
+- http://github.com/husjon
+
 <!-- ADDING YOURSELF AS AN AUTHOR:
 
 1. Add a new headline above this comment block: ## Firstname Lastname (or you can use a nick name if you wish).
